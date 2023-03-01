@@ -9,8 +9,73 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <COMReference Include="VSLangProj2">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>1</VersionMinor>
+        <VersionMajor>7</VersionMajor>
+        <Guid>7c0c4d36-0fa7-4840-b27c-166f91bc9e57</Guid>
+        <Lcid>0</Lcid>
+        <Isolated>false</Isolated>
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </COMReference>
+      <COMReference Include="VSLangProj">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>0</VersionMinor>
+        <VersionMajor>7</VersionMajor>
+        <Guid>49a1950e-3e35-4595-8cb9-920c64c44d67</Guid>
+        <Lcid>0</Lcid>
+        <Isolated>false</Isolated>
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </COMReference>
+      <COMReference Include="Microsoft.VisualStudio.CommandBars">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>0</VersionMinor>
+        <VersionMajor>8</VersionMajor>
+        <Guid>1cba492e-7263-47bb-87fe-639000619b15</Guid>
+        <Lcid>0</Lcid>
+        <Isolated>false</Isolated>
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </COMReference>
+      <COMReference Include="VSLangProj100">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>0</VersionMinor>
+        <VersionMajor>10</VersionMajor>
+        <Guid>790899ed-e28c-4003-a8c3-71bb7f6ad8aa</Guid>
+        <Lcid>0</Lcid>
+        <Isolated>false</Isolated>
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </COMReference>
+      <COMReference Include="VSLangProj80">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>0</VersionMinor>
+        <VersionMajor>8</VersionMajor>
+        <Guid>307953c0-7973-490a-a4a7-25999e023be8</Guid>
+        <Lcid>0</Lcid>
+        <Isolated>false</Isolated>
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </COMReference>
+      <COMReference Include="VSLangProj90">
+        <WrapperTool>tlbimp</WrapperTool>
+        <VersionMinor>0</VersionMinor>
+        <VersionMajor>9</VersionMajor>
+        <Guid>dcbf68c6-da4b-44f5-b9e0-1563ec000392</Guid>
+        <Lcid>0</Lcid>
+        <Isolated>false</Isolated>
+        <EmbedInteropTypes>true</EmbedInteropTypes>
+      </COMReference>
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
       <PackageReference Include="xunit" Version="2.4.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OOP-ICT.First\OOP-ICT.First.csproj" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
     </ItemGroup>
 
 </Project>

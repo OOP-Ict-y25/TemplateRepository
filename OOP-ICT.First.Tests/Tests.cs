@@ -1,6 +1,7 @@
-﻿using Xunit;
+﻿
+using Xunit;
 using Xunit.Sdk;
-
+using OOP_ICT;
 namespace OOP_ICT.Dealer.Tests;
 
 public class Tests
@@ -15,17 +16,25 @@ public class Tests
     [Fact]
     public void CollectionsAreEquals_True()
     {
-        var firstCollection = new List<int>(){1,2,3};
-        var secondCollection = new List<int>(){1,2,3};
-        Assert.Equal(firstCollection, secondCollection);
+        CardDeck firstCollection = new CardDeck();
+        CardDeck secondCollection = new CardDeck();
+        secondCollection.Shuffle();
+        Assert.NotEqual(firstCollection, secondCollection);
     }
-    
+
     [Fact]
     public void ValueContainsInCollection_True()
     {
-        var value = 2;
-        var collection = new List<int>(){1,2,3};
-        Assert.Contains(value, collection);
+        var suits = new List<string>() { "Spades", "Hearts", "Diamonds", "Clubs" };
+        var faceValues = new List<string>() { "Ace", "King", "Queen", "Jack", "10", "9", "8", "7", "6", "5", "4", "3", "2" };
+        CardDeck collection = new CardDeck();
+        foreach (string suit in suits)
+        {
+            foreach (string faceValue in faceValues)
+            {
+                Assert.Contains(string.Format("{0} of {1}", faceValue, suit),collection.Deck());
+            }
+        }
     }
 
     [Fact]

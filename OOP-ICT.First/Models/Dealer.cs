@@ -2,15 +2,23 @@
 
 namespace OOP_ICT;
 
-public class Dealer : IDealer
+public class Dealer 
 {
-    public void InitializeCardDeck()
+    CardDeck DealerDeck = new CardDeck();
+    
+    public void Shuffle()
     {
-        throw new NotImplementedException();
+        DealerDeck.Shuffle();
+    }
+    public UserDeck CreateShuffledUserDeck(int numCards)
+    {
+        UserDeck userDeck = new UserDeck();
+        for (int i = 0; i < numCards; i++)
+        {
+            userDeck.AddCard(DealerDeck.Draw());
+        }
+        userDeck.Shuffle();
+        return userDeck;
     }
 
-    public UserDeck CreateShuffledUserDeck()
-    {
-        throw new NotImplementedException();
-    }
 }
