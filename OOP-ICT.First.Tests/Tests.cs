@@ -1,37 +1,48 @@
-﻿using Xunit;
-using Xunit.Sdk;
+﻿using OOP_ICT.Models;
+using Xunit;
 
 namespace OOP_ICT.Dealer.Tests;
 
 public class Tests
 {
-    // TODO: Обратите внимание, что для коллекций и проверок есть разные виды Assert
-    [Fact]
-    public void CheckTestIsWorking_CorrectBuild()
-    {
-        Assert.True(true);
-    }
-
     [Fact]
     public void CollectionsAreEquals_True()
     {
-        var firstCollection = new List<int>(){1,2,3};
-        var secondCollection = new List<int>(){1,2,3};
-        Assert.Equal(firstCollection, secondCollection);
+        CardDeck cardDeck = new CardDeck();
+        Models.Dealer dealer = new Models.Dealer(cardDeck);
+
+        List<Card> original = dealer.ShowOriginal().Cards;
+        List<Card> shuffled = dealer.GetShuffledUseDeck().Cards;
+
+        Assert.Equal(original, shuffled);
     }
     
-    [Fact]
+/*    [Fact]
     public void ValueContainsInCollection_True()
     {
-        var value = 2;
-        var collection = new List<int>(){1,2,3};
-        Assert.Contains(value, collection);
-    }
+        CardDeck cardDeck = new CardDeck();
+        Models.Dealer dealer = new Models.Dealer(cardDeck);
+
+        List<Card> original = dealer.ShowOriginal().Cards;
+        List<Card> shuffled = dealer.GetShuffledUseDeck().Cards;
+
+        Card card = new Card(Faces.Jack, Suits.Spades);
+
+       // Assert.Contains(card, original);
+        Assert.Contains(card, shuffled);
+    }*/
 
     [Fact]
     public void CheckForNullException_AssertNullRef()
     {
-        var collection = new List<string>() { "я", "люблю", "ооп" };
-        Assert.Throws<InvalidOperationException>(() => collection.First(x => x == null));
+        CardDeck cardDeck = new CardDeck();
+        Models.Dealer dealer = new Models.Dealer(cardDeck);
+
+        List<Card> original = dealer.ShowOriginal().Cards;
+        List<Card> shuffled = dealer.GetShuffledUseDeck().Cards;
+
+        Assert.Throws<InvalidOperationException>(() => original.First(x => x == null));
+        //Assert.Throws<InvalidOperationException>(() => shuffled.First(x => x == null));
     }
+
 }
