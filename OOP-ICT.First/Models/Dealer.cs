@@ -1,16 +1,24 @@
-﻿using OOP_ICT.Interfaces;
+﻿using System.Security.Cryptography.X509Certificates;
 
-namespace OOP_ICT;
+namespace OOP_ICT.Models;
 
 public class Dealer : IDealer
 {
-    public void InitializeCardDeck()
+    private CardDeck deck;
+
+    public Dealer(CardDeck originalDeck)
     {
-        throw new NotImplementedException();
+        deck = originalDeck;
     }
 
-    public UserDeck CreateShuffledUserDeck()
+    public CardDeck ShowOriginal()
     {
-        throw new NotImplementedException();
+        return deck;
+    }
+
+    public CardDeck GetShuffledUseDeck()
+    {
+        deck.Shuffle();
+        return deck;
     }
 }
