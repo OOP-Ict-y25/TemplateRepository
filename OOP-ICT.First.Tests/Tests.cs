@@ -8,7 +8,6 @@ namespace OOP_ICT.Dealer.Tests;
 
 public class Tests
 {
-    // TODO: Обратите внимание, что для коллекций и проверок есть разные виды Assert
     [Fact]
     public void CheckTestIsWorking_CorrectBuild()
     {
