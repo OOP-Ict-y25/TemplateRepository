@@ -1,6 +1,18 @@
-﻿namespace OOP_ICT;
+﻿namespace OOP_ICT.Models;
 
-public class CardDeck
+public static class CardDeck
 {
-    private List<Card> _cards = new List<Card>();
+    public static List<Card> Create()
+    {
+        List<Card> cards = new ();
+        foreach (CardSuitEnum cardSuit in Enum.GetValues(typeof(CardSuitEnum)))
+        {
+            foreach (CardValueEnum cardValue in Enum.GetValues(typeof(CardValueEnum)))
+            {
+                cards.Add(new Card(cardSuit, cardValue));
+            }
+        }
+
+        return cards;
+    }
 }

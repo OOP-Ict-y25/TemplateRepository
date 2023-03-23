@@ -1,0 +1,15 @@
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\bin\Debug\net6.0\OOP-ICT.First.exe
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\bin\Debug\net6.0\OOP-ICT.First.deps.json
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\bin\Debug\net6.0\OOP-ICT.First.runtimeconfig.json
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\bin\Debug\net6.0\OOP-ICT.First.dll
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\bin\Debug\net6.0\OOP-ICT.First.pdb
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.csproj.AssemblyReference.cache
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.AssemblyInfoInputs.cache
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.AssemblyInfo.cs
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.csproj.CoreCompileInputs.cache
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.dll
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\refint\OOP-ICT.First.dll
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.pdb
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\OOP-ICT.First.genruntimeconfig.cache
+C:\Users\79110\RiderProjects\OOP-Ict\OOP-ICT.First\obj\Debug\net6.0\ref\OOP-ICT.First.dll
